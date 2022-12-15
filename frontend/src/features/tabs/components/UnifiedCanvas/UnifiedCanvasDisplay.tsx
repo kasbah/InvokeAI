@@ -3,7 +3,7 @@ import { createSelector } from '@reduxjs/toolkit';
 import IAICanvasResizer from 'features/canvas/components/IAICanvasResizer';
 import _ from 'lodash';
 import { useLayoutEffect } from 'react';
-import { useAppDispatch, useAppSelector } from 'app/storeHooks';
+import { useAppDispatch, useAppSelector } from 'app/store';
 import { setDoesCanvasNeedScaling } from 'features/canvas/store/canvasSlice';
 import IAICanvas from 'features/canvas/components/IAICanvas';
 import IAICanvasOutpaintingControls from 'features/canvas/components/IAICanvasToolbar/IAICanvasToolbar';

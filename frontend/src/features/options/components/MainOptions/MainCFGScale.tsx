@@ -1,8 +1,8 @@
 import React from 'react';
-import { RootState } from 'app/store';
-import { useAppDispatch, useAppSelector } from 'app/storeHooks';
+import { RootState, useAppDispatch, useAppSelector } from 'app/store';
 import IAINumberInput from 'common/components/IAINumberInput';
 import { setCfgScale } from 'features/options/store/optionsSlice';
+import { inputWidth } from './MainOptions';
 
 export default function MainCFGScale() {
   const dispatch = useAppDispatch();
@@ -18,7 +18,7 @@ export default function MainCFGScale() {
       max={200}
       onChange={handleChangeCfgScale}
       value={cfgScale}
-      width="auto"
+      width={inputWidth}
       styleClass="main-option-block"
       textAlign="center"
       isInteger={false}

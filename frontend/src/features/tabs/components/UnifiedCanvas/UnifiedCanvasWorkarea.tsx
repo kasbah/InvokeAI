@@ -1,8 +1,7 @@
 import UnifiedCanvasPanel from './UnifiedCanvasPanel';
 import UnifiedCanvasDisplay from './UnifiedCanvasDisplay';
 import InvokeWorkarea from 'features/tabs/components/InvokeWorkarea';
-import { RootState } from 'app/store';
-import { useAppSelector } from 'app/storeHooks';
+import { RootState, useAppSelector } from 'app/store';
 import UnifiedCanvasDisplayBeta from './UnifiedCanvasBeta/UnifiedCanvasDisplayBeta';
 
 export default function UnifiedCanvasWorkarea() {

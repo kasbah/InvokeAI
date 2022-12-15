@@ -1,6 +1,6 @@
 import { ButtonGroup, Flex } from '@chakra-ui/react';
 import { createSelector } from '@reduxjs/toolkit';
-import { useAppDispatch, useAppSelector } from 'app/storeHooks';
+import { useAppDispatch, useAppSelector } from 'app/store';
 import IAIIconButton from 'common/components/IAIIconButton';
 import _ from 'lodash';
 import { useCallback } from 'react';

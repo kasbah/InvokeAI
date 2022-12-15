@@ -1,5 +1,4 @@
-import { RootState } from 'app/store';
-import { useAppDispatch, useAppSelector } from 'app/storeHooks';
+import { RootState, useAppDispatch, useAppSelector } from 'app/store';
 import IAISlider from 'common/components/IAISlider';
 import { isStagingSelector } from 'features/canvas/store/canvasSelectors';
 import { setBrushSize } from 'features/canvas/store/canvasSlice';

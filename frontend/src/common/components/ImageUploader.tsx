@@ -5,7 +5,7 @@ import {
   useEffect,
   KeyboardEvent,
 } from 'react';
-import { useAppDispatch, useAppSelector } from 'app/storeHooks';
+import { useAppDispatch, useAppSelector } from 'app/store';
 import { FileRejection, useDropzone } from 'react-dropzone';
 import { useToast } from '@chakra-ui/react';
 import { ImageUploaderTriggerContext } from 'app/contexts/ImageUploaderTriggerContext';

@@ -1,7 +1,10 @@
 import React from 'react';
 import { NUMPY_RAND_MAX, NUMPY_RAND_MIN } from 'app/constants';
-import { RootState } from 'app/store';
-import { useAppDispatch, useAppSelector } from 'app/storeHooks';
+import {
+  RootState,
+  useAppDispatch,
+  useAppSelector,
+} from 'app/store';
 import IAINumberInput from 'common/components/IAINumberInput';
 import { setSeed } from 'features/options/store/optionsSlice';
 

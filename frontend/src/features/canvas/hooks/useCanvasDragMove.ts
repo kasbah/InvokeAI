@@ -1,5 +1,5 @@
 import { createSelector } from '@reduxjs/toolkit';
-import { useAppDispatch, useAppSelector } from 'app/storeHooks';
+import { useAppDispatch, useAppSelector } from 'app/store';
 import { KonvaEventObject } from 'konva/lib/Node';
 import _ from 'lodash';
 import { useCallback } from 'react';

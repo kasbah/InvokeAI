@@ -1,6 +1,5 @@
 import { Flex } from '@chakra-ui/layout';
-import { RootState } from 'app/store';
-import { useAppDispatch, useAppSelector } from 'app/storeHooks';
+import { RootState, useAppDispatch, useAppSelector } from 'app/store';
 import IAIIconButton from 'common/components/IAIIconButton';
 import { setDoesCanvasNeedScaling } from 'features/canvas/store/canvasSlice';
 import CancelButton from 'features/options/components/ProcessButtons/CancelButton';

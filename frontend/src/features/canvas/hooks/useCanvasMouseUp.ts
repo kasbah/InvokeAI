@@ -1,5 +1,5 @@
 import { createSelector } from '@reduxjs/toolkit';
-import { useAppDispatch, useAppSelector } from 'app/storeHooks';
+import { useAppDispatch, useAppSelector } from 'app/store';
 import { activeTabNameSelector } from 'features/options/store/optionsSelectors';
 import Konva from 'konva';
 import _ from 'lodash';

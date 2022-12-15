@@ -1,5 +1,4 @@
-import { RootState } from 'app/store';
-import { useAppDispatch, useAppSelector } from 'app/storeHooks';
+import { RootState, useAppDispatch, useAppSelector } from 'app/store';
 import IAIIconButton from 'common/components/IAIIconButton';
 import { isStagingSelector } from 'features/canvas/store/canvasSelectors';
 import { mergeAndUploadCanvas } from 'features/canvas/store/thunks/mergeAndUploadCanvas';

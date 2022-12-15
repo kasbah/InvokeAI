@@ -1,7 +1,6 @@
 import React, { ChangeEvent } from 'react';
 import { WIDTHS } from 'app/constants';
-import { RootState } from 'app/store';
-import { useAppDispatch, useAppSelector } from 'app/storeHooks';
+import { RootState, useAppDispatch, useAppSelector } from 'app/store';
 import IAISelect from 'common/components/IAISelect';
 import { activeTabNameSelector } from 'features/options/store/optionsSelectors';
 import { setWidth } from 'features/options/store/optionsSlice';

@@ -1,4 +1,4 @@
-import { useAppDispatch } from 'app/storeHooks';
+import { useAppDispatch } from 'app/store';
 import Konva from 'konva';
 import _ from 'lodash';
 import {

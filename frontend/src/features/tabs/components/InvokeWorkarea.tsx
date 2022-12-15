@@ -2,8 +2,7 @@ import { Tooltip } from '@chakra-ui/react';
 import { createSelector } from '@reduxjs/toolkit';
 import { DragEvent, ReactNode } from 'react';
 import { VscSplitHorizontal } from 'react-icons/vsc';
-import { RootState } from 'app/store';
-import { useAppDispatch, useAppSelector } from 'app/storeHooks';
+import { RootState, useAppDispatch, useAppSelector } from 'app/store';
 import ImageGallery from 'features/gallery/components/ImageGallery';
 import { activeTabNameSelector } from 'features/options/store/optionsSelectors';
 import {

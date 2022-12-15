@@ -1,5 +1,4 @@
-import { RootState } from 'app/store';
-import { useAppSelector } from 'app/storeHooks';
+import { RootState, useAppSelector } from 'app/store';
 import CurrentImageButtons from './CurrentImageButtons';
 import { MdPhoto } from 'react-icons/md';
 import CurrentImagePreview from './CurrentImagePreview';

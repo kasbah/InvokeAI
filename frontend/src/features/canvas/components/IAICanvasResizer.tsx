@@ -1,6 +1,6 @@
 import { Spinner } from '@chakra-ui/react';
 import { useLayoutEffect, useRef } from 'react';
-import { useAppDispatch, useAppSelector } from 'app/storeHooks';
+import { useAppDispatch, useAppSelector } from 'app/store';
 import { activeTabNameSelector } from 'features/options/store/optionsSelectors';
 import {
   resizeAndScaleCanvas,

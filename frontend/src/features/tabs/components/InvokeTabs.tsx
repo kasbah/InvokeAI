@@ -2,8 +2,7 @@ import { Tab, TabPanel, TabPanels, Tabs, Tooltip } from '@chakra-ui/react';
 import _ from 'lodash';
 import React, { ReactElement } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
-import { RootState } from 'app/store';
-import { useAppDispatch, useAppSelector } from 'app/storeHooks';
+import { RootState, useAppDispatch, useAppSelector } from 'app/store';
 import NodesWIP from 'common/components/WorkInProgress/NodesWIP';
 import { PostProcessingWIP } from 'common/components/WorkInProgress/PostProcessingWIP';
 import ImageToImageIcon from 'common/icons/ImageToImageIcon';
@@ -21,15 +20,8 @@ import UnifiedCanvasWorkarea from './UnifiedCanvas/UnifiedCanvasWorkarea';
 import UnifiedCanvasIcon from 'common/icons/UnifiedCanvasIcon';
 import TrainingWIP from 'common/components/WorkInProgress/Training';
 import TrainingIcon from 'common/icons/TrainingIcon';
-import { InvokeTabName } from 'features/tabs/tabMap';
 
-export interface InvokeTabInfo {
-  title: ReactElement;
-  workarea: ReactElement;
-  tooltip: string;
-}
-
-export const tabDict: Record<InvokeTabName, InvokeTabInfo> = {
+export const tabDict = {
   txt2img: {
     title: <TextToImageIcon fill={'black'} boxSize={'2.5rem'} />,
     workarea: <TextToImageWorkarea />,
@@ -61,6 +53,13 @@ export const tabDict: Record<InvokeTabName, InvokeTabInfo> = {
     tooltip: 'Training',
   },
 };
+
+// Array where index maps to the key of tabDict
+export const tabMap = _.map(tabDict, (tab, key) => key);
+
+// Use tabMap to generate a union type of tab names
+const tabMapTypes = [...tabMap] as const;
+export type InvokeTabName = typeof tabMapTypes[number];
 
 export default function InvokeTabs() {
   const activeTab = useAppSelector(

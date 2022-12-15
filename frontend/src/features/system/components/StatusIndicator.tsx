@@ -1,8 +1,7 @@
 import { Text, Tooltip } from '@chakra-ui/react';
 import { createSelector } from '@reduxjs/toolkit';
 import { isEqual } from 'lodash';
-import { RootState } from 'app/store';
-import { useAppDispatch, useAppSelector } from 'app/storeHooks';
+import { RootState, useAppDispatch, useAppSelector } from 'app/store';
 import { errorSeen, SystemState } from 'features/system/store/systemSlice';
 
 const systemSelector = createSelector(

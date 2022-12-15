@@ -1,5 +1,4 @@
-import { RootState } from 'app/store';
-import { useAppDispatch, useAppSelector } from 'app/storeHooks';
+import { RootState, useAppDispatch, useAppSelector } from 'app/store';
 import IAICheckbox from 'common/components/IAICheckbox';
 import { setShouldDarkenOutsideBoundingBox } from 'features/canvas/store/canvasSlice';
 import React from 'react';

@@ -5,7 +5,7 @@ import { Vector2d } from 'konva/lib/types';
 import _ from 'lodash';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Group, Rect, Transformer } from 'react-konva';
-import { useAppDispatch, useAppSelector } from 'app/storeHooks';
+import { useAppDispatch, useAppSelector } from 'app/store';
 import {
   roundDownToMultiple,
   roundToMultiple,

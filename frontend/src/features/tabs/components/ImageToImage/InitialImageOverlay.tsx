@@ -1,7 +1,6 @@
 import { Image } from '@chakra-ui/react';
 import React from 'react';
-import { RootState } from 'app/store';
-import { useAppSelector } from 'app/storeHooks';
+import { RootState, useAppSelector } from 'app/store';
 
 export default function InitialImageOverlay() {
   const initialImage = useAppSelector(

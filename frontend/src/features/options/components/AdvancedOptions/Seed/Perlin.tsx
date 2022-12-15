@@ -1,6 +1,9 @@
 import React from 'react';
-import { RootState } from 'app/store';
-import { useAppDispatch, useAppSelector } from 'app/storeHooks';
+import {
+  RootState,
+  useAppDispatch,
+  useAppSelector,
+} from 'app/store';
 import IAINumberInput from 'common/components/IAINumberInput';
 import { setPerlin } from 'features/options/store/optionsSlice';
 

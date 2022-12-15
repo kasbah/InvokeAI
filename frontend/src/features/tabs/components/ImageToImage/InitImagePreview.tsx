@@ -1,6 +1,5 @@
 import { Image, useToast } from '@chakra-ui/react';
-import { RootState } from 'app/store';
-import { useAppDispatch, useAppSelector } from 'app/storeHooks';
+import { RootState, useAppDispatch, useAppSelector } from 'app/store';
 import ImageUploaderIconButton from 'common/components/ImageUploaderIconButton';
 import { clearInitialImage } from 'features/options/store/optionsSlice';
 

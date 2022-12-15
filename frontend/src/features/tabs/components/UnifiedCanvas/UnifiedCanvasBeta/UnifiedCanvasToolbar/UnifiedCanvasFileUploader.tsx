@@ -1,4 +1,4 @@
-import { useAppSelector } from 'app/storeHooks';
+import { useAppSelector } from 'app/store';
 import IAIIconButton from 'common/components/IAIIconButton';
 import useImageUploader from 'common/hooks/useImageUploader';
 import { isStagingSelector } from 'features/canvas/store/canvasSelectors';

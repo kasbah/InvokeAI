@@ -5,8 +5,7 @@ import React, { ReactNode, useCallback, useEffect, useRef } from 'react';
 import { useHotkeys } from 'react-hotkeys-hook';
 import { BsPinAngle, BsPinAngleFill } from 'react-icons/bs';
 import { CSSTransition } from 'react-transition-group';
-import { RootState } from 'app/store';
-import { useAppDispatch, useAppSelector } from 'app/storeHooks';
+import { RootState, useAppDispatch, useAppSelector } from 'app/store';
 import {
   OptionsState,
   setOptionsPanelScrollPosition,

@@ -10,7 +10,7 @@ import {
 import { ExternalLinkIcon } from '@chakra-ui/icons';
 import { memo } from 'react';
 import { IoArrowUndoCircleOutline } from 'react-icons/io5';
-import { useAppDispatch } from 'app/storeHooks';
+import { useAppDispatch } from 'app/store';
 import * as InvokeAI from 'app/invokeai';
 import {
   setCfgScale,
