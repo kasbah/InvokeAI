@@ -67,6 +67,7 @@ export default function ImageGallery() {
     images,
     currentCategory,
     currentImageUuid,
+    intermediateImage,
     shouldPinGallery,
     shouldShowGallery,
     galleryScrollPosition,
@@ -83,6 +84,10 @@ export default function ImageGallery() {
     shouldEnableResize,
     shouldUseSingleGalleryColumn,
   } = useAppSelector(imageGallerySelector);
+
+  const imagesWithIntermediate = intermediateImage
+    ? [intermediateImage].concat(images)
+    : images;
 
   const { galleryMinWidth, galleryMaxWidth } = isLightBoxOpen
     ? {
@@ -511,13 +516,13 @@ export default function ImageGallery() {
             </div>
           </div>
           <div className="image-gallery-container" ref={galleryContainerRef}>
-            {images.length || areMoreImagesAvailable ? (
+            {imagesWithIntermediate.length || areMoreImagesAvailable ? (
               <>
                 <div
                   className="image-gallery"
                   style={{ gridTemplateColumns: galleryGridTemplateColumns }}
                 >
-                  {images.map((image) => {
+                  {imagesWithIntermediate.map((image) => {
                     const { uuid } = image;
                     const isSelected = currentImageUuid === uuid;
                     return (

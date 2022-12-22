@@ -30,7 +30,7 @@ export const imagesSelector = createSelector(
     const imagesLength = tempImages.length;
 
     return {
-      imageToDisplay: intermediateImage ? intermediateImage : currentImage,
+      imageToDisplay: currentImage ? currentImage : intermediateImage,
       isIntermediate: Boolean(intermediateImage),
       viewerImageToDisplay: currentImage,
       currentCategory,

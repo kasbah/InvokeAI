@@ -18,6 +18,7 @@ export const imageGallerySelector = createSelector(
     const {
       categories,
       currentCategory,
+      intermediateImage,
       currentImageUuid,
       shouldPinGallery,
       shouldShowGallery,
@@ -34,6 +35,7 @@ export const imageGallerySelector = createSelector(
 
     return {
       currentImageUuid,
+      intermediateImage,
       shouldPinGallery,
       shouldShowGallery,
       galleryScrollPosition,

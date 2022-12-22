@@ -67,7 +67,7 @@ const systemSelector = createSelector(
       isLightBoxOpen,
     } = options;
 
-    const { intermediateImage, currentImage } = gallery;
+    const { currentImage } = gallery;
 
     return {
       isProcessing,
@@ -76,7 +76,7 @@ const systemSelector = createSelector(
       isESRGANAvailable,
       upscalingLevel,
       facetoolStrength,
-      shouldDisableToolbarButtons: Boolean(intermediateImage) || !currentImage,
+      shouldDisableToolbarButtons: !currentImage,
       currentImage,
       shouldShowImageDetails,
       activeTabName,
